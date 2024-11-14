@@ -1,0 +1,31 @@
+[project]
+name = "xfeat"
+description = "XFeat: Accelerated Features for Lightweight Image Matching"
+version = "0.0"
+authors = [
+    {name = "Guilherme Potje"},
+    {name = "Felipe Cadar"},
+    {name = "Andre Araujo"},
+    {name = "Renato Martins"},
+    {name = "Erickson R. Nascimento"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+urls = {Repository = "https://github.com/verlab/accelerated_features"}
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+packages = ["xfeat"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
