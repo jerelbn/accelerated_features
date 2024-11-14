@@ -24,7 +24,7 @@ dynamic = ["dependencies"]
 dev = []
 
 [tool.setuptools]
-packages = ["xfeat"]
+packages = ["modules"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
